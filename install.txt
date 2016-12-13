@@ -1,0 +1,5 @@
+curl -s https://raw.githubusercontent.com/ozcarstormer/scaffold/master/osx/init.sh | sh
+
+$HOME/Developer/scaffold/osx/sanity.sh
+$HOME/Developer/scaffold/osx/brew.sh
+$HOME/Developer/scaffold/osx/node.sh
