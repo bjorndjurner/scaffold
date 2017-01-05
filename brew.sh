@@ -11,13 +11,6 @@ brew tap homebrew/dupes
 brew tap homebrew/services
 brew tap caskroom/versions
 
-brew install mysql
-brew install bash
-brew install curl
-brew install phantomjs
-brew install svn
-brew install youtube-dl
-brew install zsh
 
 brew cask install adobe-creative-cloud
 brew cask install adobe-after-effects-cc
@@ -67,3 +60,23 @@ brew cask install vagrant-manager
 brew cask install virtualbox
 brew cask install vlc
 brew cask install zeplin
+
+#!/bin/
+
+    # PATH
+    export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    export EDITOR='atom -w'
+
+    # Owner
+    export USER_NAME="Ozcar Stormer"
+    eval "$(rbenv init -)"
+
+    # FileSearch
+    function f() { find . -iname "*$1*" ${@:2} }
+    function r() { grep "$1" ${@:2} -R . }
+
+    #mkdir and cd
+    function mkcd() { mkdir -p "$@" && cd "$_"; }
+
+    # Aliases
+    alias cppcompile='c++ -std=c++11 -stdlib=libc++'

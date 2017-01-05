@@ -1,4 +1,7 @@
 curl -s https://raw.githubusercontent.com/ozcarstormer/scaffold/master/init.sh | sh
+curl -s $HOME/Developer/scaffold/sanity.sh | sh
+curl -s $HOME/Developer/scaffold/brew.sh | sh
+curl -s $HOME/Developer/scaffold/node.sh | sh
 
 $HOME/Developer/scaffold/osx/sanity.sh
 $HOME/Developer/scaffold/osx/brew.sh

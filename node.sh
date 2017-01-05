@@ -9,3 +9,6 @@ npm install -g express-generator@4
 npm install -g cordova
 npm install -g forever
 npm install -g webpack
+npm install -g cordova
+npm install -g phonegap@latest
+npm install -g ionic

@@ -36,6 +36,8 @@ brew install git
 
 git config --global user.name "Ozcar Stormer"
 git config --global user.email ozcar.stormer@gmail.com
+git config --global credential.helper osxkeychain
+git config --global core.editor "nano"
 
 git config --global alias.co checkout
 git config --global alias.ci commit
@@ -46,20 +48,18 @@ git config --global alias.d diff
 git config --global alias.unstage "reset HEAD --"
 # Get the current branch name (not so useful in itself, but used in
 # other aliases)
-git config --global alias.br-name "!git rev-parse --abbrev-ref HEAD"
+git config --global alias.branch-name = "!git rev-parse --abbrev-ref HEAD"
 # Push the current branch to the remote "origin", and set it to track
 # the upstream branch
-git config --global alias.publish "!git push -u origin $(git branch-name)"
+git config --global alias.publish = "!git push -u origin $(git branch-name)"
 # Delete the remote version of the current branch
-git config --global alias.unpublish "!git push origin :$(git branch-name)"
+git config --global alias.unpublish = "!git push origin :$(git branch-name)"
 # Delete a branch and recreate it from master — useful if you have, say,
 # a development branch and a master branch and they could conceivably go
 # out of sync
 # Pull the latest of the current branch from remote
-git config --global alias.pol "!git pull origin $(git branch-name)"
-git config --global alias.recreate "!f() { [[ -n $@ ]] && git checkout \"$@\" && git unpublish && git checkout master && git branch -D \"$@\" && git checkout -b \"$@\" && git publish; }; f"
-git config --global core.editor "nano"
-
+git config --global alias.pol = "!git pull origin $(git branch-name)"
+git config --global alias.recreate = "!f() { [[ -n $@ ]] && git checkout \"$@\" && git unpublish && git checkout master && git branch -D \"$@\" && git checkout -b \"$@\" && git publish; }; f"
 
 # ============= Setup Git ========================
 
