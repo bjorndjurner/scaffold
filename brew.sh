@@ -11,14 +11,8 @@ brew tap homebrew/dupes
 brew tap homebrew/services
 brew tap caskroom/versions
 
-
-brew cask install adobe-creative-cloud
-brew cask install adobe-after-effects-cc
-brew cask install adobe-illustrator-cc
-brew cask install adobe-indesign-cc
-brew cask install adobe-photoshop-cc
-
 brew cask install 1password
+brew cask install adobe-creative-cloud
 brew cask install android-studio
 brew cask install android-file-transfer
 brew cask install appcleaner
@@ -36,6 +30,7 @@ brew cask install iterm2
 brew cask install macvim
 brew cask install mamp
 brew cask install mockuuups-studio
+brew cask install nordvpn
 brew cask install onyx
 brew cask install poedit
 brew cask install principle
@@ -77,6 +72,3 @@ brew cask install zeplin
 
     #mkdir and cd
     function mkcd() { mkdir -p "$@" && cd "$_"; }
-
-    # Aliases
-    alias cppcompile='c++ -std=c++11 -stdlib=libc++'
