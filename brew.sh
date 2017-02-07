@@ -54,7 +54,6 @@ brew cask install zeplin
 
     # Owner
     export USER_NAME="Bjorn Djurner"
-    eval "$(rbenv init -)"
 
     # FileSearch
     function f() { find . -iname "*$1*" ${@:2} }
