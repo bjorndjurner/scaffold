@@ -34,8 +34,8 @@ fi
 
 brew install git
 
-git config --global user.name "Ozcar Stormer"
-git config --global user.email ozcar.stormer@gmail.com
+git config --global user.name "bjorndjurner"
+git config --global user.email bjorn@djurner.net
 git config --global credential.helper osxkeychain
 git config --global core.editor "nano"
 
@@ -65,12 +65,12 @@ git config --global alias.recreate = "!f() { [[ -n $@ ]] && git checkout \"$@\" 
 
 # ============= Clone scaffold ==================
 
-git clone https://github.com/ozcarstormer/scaffold.git $HOME/Developer/scaffold
+git clone https://github.com/bjorndjurner/scaffold.git $HOME/Developer/scaffold
 
 cd $HOME/Developer/scaffold/
 
 git remote remove origin
-git remote add origin git@github.com:ozcarstormer/scaffold.git
+git remote add origin git@github.com:bjorndjurner/scaffold.git
 
 # ============= End Clone scaffold ==================
 
