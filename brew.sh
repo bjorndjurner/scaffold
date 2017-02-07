@@ -5,7 +5,6 @@
 ## to the terms and service
 # ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-cask_args appdir: '/Applications'
 
 brew tap homebrew/dupes
 brew tap homebrew/services
@@ -63,7 +62,7 @@ brew cask install zeplin
     export EDITOR='atom -w'
 
     # Owner
-    export USER_NAME="Ozcar Stormer"
+    export USER_NAME="Bjorn Djurner"
     eval "$(rbenv init -)"
 
     # FileSearch
